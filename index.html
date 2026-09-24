@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shape to Sketch | Beginner Drawing Practice</title>
+
+  <meta
+    name="description"
+    content="Turn basic shapes into actual drawings with simple beginner-friendly drawing exercises."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Shape to Sketch</a>
+
+      <nav>
+        <a href="#generator">Drawing Generator</a>
+        <a href="#how-it-works">How It Works</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero-content">
+
+        <div class="hero-text">
+          <p class="eyebrow">BEGINNER DRAWING PRACTICE</p>
+
+          <h1>Turn basic shapes into actual drawings.</h1>
+
+          <p class="hero-description">
+            Practice going from circles, ovals, triangles, and simple forms
+            to complete drawings you can make your own.
+          </p>
+
+          <a href="#generator" class="primary-button">
+            Start Drawing
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- GENERATOR -->
+
+    <section id="generator" class="generator-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">YOUR PRACTICE SESSION</p>
+
+          <h2>What do you want to practice?</h2>
+
+          <p>
+            Choose your options and get a drawing exercise instantly.
+          </p>
+        </div>
+
+
+        <div class="generator-card">
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="category">What do you want to draw?</label>
+
+              <select id="category">
+                <option value="all">Anything</option>
+                <option value="animals">Animals</option>
+                <option value="food">Food</option>
+                <option value="objects">Everyday Objects</option>
+                <option value="nature">Nature</option>
+                <option value="characters">Simple Characters</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="difficulty">Difficulty</label>
+
+              <select id="difficulty">
+                <option value="very-easy">Very Easy</option>
+                <option value="beginner" selected>Beginner</option>
+                <option value="beginner-plus">Beginner+</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="time">Time</label>
+
+              <select id="time">
+                <option value="5">5 minutes</option>
+                <option value="10" selected>10 minutes</option>
+                <option value="15">15 minutes</option>
+                <option value="30">30 minutes</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="medium">Medium</label>
+
+              <select id="medium">
+                <option value="either" selected>Paper or Digital</option>
+                <option value="paper">Pencil / Paper</option>
+                <option value="digital">Digital Art</option>
+              </select>
+            </div>
+
+          </div>
+
+
+          <button id="generateButton" class="generate-button">
+            Generate My Drawing
+          </button>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div id="result" class="result-card hidden">
+
+          <div class="result-top">
+            <span id="resultCategory" class="result-tag">
+              BEGINNER
+            </span>
+
+            <span id="resultTime" class="result-time">
+              10 MIN
+            </span>
+          </div>
+
+
+          <h2 id="resultTitle">
+            Your drawing challenge
+          </h2>
+
+
+          <p id="resultFocus" class="result-focus">
+            Skill focus
+          </p>
+
+
+          <div class="practice-step">
+            <span class="step-number">1</span>
+
+            <div>
+              <h3>Block It Out</h3>
+              <p id="step1"></p>
+            </div>
+          </div>
+
+
+          <div class="practice-step">
+            <span class="step-number">2</span>
+
+            <div>
+              <h3>Build the Form</h3>
+              <p id="step2"></p>
+            </div>
+          </div>
+
+
+          <div class="practice-step">
+            <span class="step-number">3</span>
+
+            <div>
+              <h3>Add Features</h3>
+              <p id="step3"></p>
+            </div>
+          </div>
+
+
+          <div class="practice-step">
+            <span class="step-number">4</span>
+
+            <div>
+              <h3>Clean It Up</h3>
+              <p id="step4"></p>
+            </div>
+          </div>
+
+
+          <div class="make-it-yours">
+            <h3>✨ Make It Yours</h3>
+
+            <p id="personalize"></p>
+          </div>
+
+
+          <div class="bonus">
+            <h3>Bonus Challenge</h3>
+
+            <p id="bonus"></p>
+          </div>
+
+
+          <button id="newButton" class="secondary-button">
+            Generate Another
+          </button>
+
+        </div>
+
+
+        <!-- AD PLACEHOLDER -->
+
+        <div class="ad-placeholder">
+          <span>Advertisement</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section id="how-it-works" class="info-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">HOW IT WORKS</p>
+
+          <h2>From simple shapes to your own drawing.</h2>
+        </div>
+
+
+        <div class="steps-grid">
+
+          <div class="info-card">
+            <span>01</span>
+            <h3>Build</h3>
+            <p>
+              Start with simple shapes instead of worrying about details.
+            </p>
+          </div>
+
+
+          <div class="info-card">
+            <span>02</span>
+            <h3>Practice</h3>
+            <p>
+              Follow the construction steps and focus on proportions.
+            </p>
+          </div>
+
+
+          <div class="info-card">
+            <span>03</span>
+            <h3>Change</h3>
+            <p>
+              Try a different pose, proportion, expression, or perspective.
+            </p>
+          </div>
+
+
+          <div class="info-card">
+            <span>04</span>
+            <h3>Make It Yours</h3>
+            <p>
+              Use the final challenge to experiment with your own choices.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FUTURE PRODUCT -->
+
+    <section class="workbook-section">
+
+      <div class="container">
+
+        <div class="workbook-card">
+
+          <p class="eyebrow">COMING SOON</p>
+
+          <h2>Want more structured practice?</h2>
+
+          <p>
+            A beginner-friendly 30-day shape-to-drawing workbook
+            is coming soon.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        <strong>Shape to Sketch</strong>
+
+        <p>
+          Beginner-friendly drawing practice.
+        </p>
+      </div>
+
+      <p>
+        © 2026 Shape to Sketch
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
